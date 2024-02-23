@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,62 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Footer Example</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container max-w-screen-xl mx-auto cols-12">
-        <footer class="bg-blue-700 dark:bg-blue-900 cols-12">
-            <div class="container px-6 py-12 mx-auto ">
-                <div class="flex justify-between px-40 grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4 max-sm:flex-col">
-                    <div class="sm:col-span-2 md:col-span-1">
-                        <h1 class="max-w-lg text-xl font-semibold tracking-tight text-white xl:text-2xl dark:text-grey-900 ">Subscribe to our newsletter for updates.</h1>
-                        <div class="flex flex-col mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row gap-x-4">
-                            <input id="email" type="text" class="max-w-lg text-xl font-semibold tracking-tight text-[#000000] xl:text-2xl dark:text-white py-2 px-4 rounded" placeholder="Email Address">
-                            <button class="max-w-lg text-xl font-semibold tracking-tight text-[#313131] xl:text-2xl dark:text-white rounded bg-blue-500 py-2 px-6 shadow-sm shadow-white">
-
-                                Subscribe
-                            </button>
-                        </div>
-                    </div>
-                    <div class="flex flex-col">
-                        <p class="text-white font-bold">Quick Link</p>
-                        <div class="flex flex-col">
-                            <a href="#" class="text-yellow-400">Home</a>
-                            <a href="#" class="text-yellow-400">Who We Are</a>
-                            <a href="#" class="text-yellow-400">Our Philosophy</a>
-                        </div>
-                        <div class="font-weight">
-
-                        </div>
-                        <div class="color">
-
-                        </div>
-                    </div>
-                    <div class="flex flex-col">
-                        <p class="text-white font-bold">Technologies</p>
-                        <div class="flex flex-col">
-                            <a href="#" class="text-yellow-400">HTML</a>
-                            <a href="#" class="text-yellow-400">CSS</a>
-                            <a href="#" class="text-yellow-400">JavaScript</a>
-                        </div>
-                        <div class="font-weight">
-
-                        </div>
-                        <div class="color">
-
-                        </div>
+    <!-- I added a border around the footer -->
+    <footer class="bg-blue-400 border-color-black border-2">
+        <div class="container px-6 py-12 mx-auto">
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
+                <div class="sm:col-span-2">
+                    <h1 class="max-w-lg text-xl font-semibold tracking-tight text-white xl:text-2xl mb-5">Subscribe to our newsletter for updates.</h1>
+                    <div class="flex flex-col mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row">
+                        <input id="email" type="text" placeholder="Email address" class="border border-gray-300 rounded-md px-3 py-2 focus:outline-none w-auto focus:border-orange-500 mr-4" aria-label="Email Address">
+                        <!-- I added a hover effect with a shadow to the button -->
+                        <button class="px-4 py-2 text-[#313131] border:none rounded-md dark:text-white w-auto bg-blue-900 hover:bg-blue-700 shadow-md hover:shadow-lg dark:border-[#313131] focus:border-[#d86943] dark:focus:border-[#d86943] focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-[#d86943] mr-4 shadow-md-white" aria-label="Subscribe">
+                            Subscribe.
+                        </button>
                     </div>
                 </div>
-                
-                <hr class="my-6 border-[#d86943]">
-                
-                <div class="flex items-center justify-between ml-40">
-                    <a href="#">
-                        <img class="w-auto h-7" src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg" alt="">
-                    </a>
+                <!-- Quick links section -->
+                <div class="sm:col-span-1">
+                    <p class="text-[#313131] font-bold ">Quick Link</p>
+                    <div class="flex flex-col mx-auto mt-6 space-y-3 md:space-y-2 md:flex-col">
+                        <a href="#" class="text-white">Home</a>
+                        <a href="#" class="text-white">Who We Are</a>
+                        <a href="#" class="text-white">Our Philosophy</a>
+                    </div>
+                </div>
+                <!-- Technologies section -->
+                <div class="sm:col-span-1">
+                    <p class="text-[#313131] font-bold">Technologies</p>
+                    <div class="flex flex-col mx-auto mt-6 space-y-3 md:space-y-2 md:flex-col">
+                        <a href="#" class="text-white">HTML</a>
+                        <a href="#" class="text-white">CSS</a>
+                        <a href="#" class="text-white">JavaScript</a>
+                    </div>
                 </div>
             </div>
-        </footer>
-    </div>
+            <!-- Horizontal line -->
+            <hr class="my-6 border-blue-900">
+            <!-- Branding section -->
+            <div class="flex items-center justify-between">
+                <a href="#" aria-label="Codespace Website">
+                    <!-- Codespace logo -->
+                    <img class="w-auto h-7" src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg" alt="">
+                </a>
+        </div>
+    </footer>
 </body>
 </html>
